@@ -1,0 +1,75 @@
+/* Responsive Styles */
+@media screen and (max-width: 293px) {
+
+	.bowling-alley-wrapper
+	{
+    	width: 788px !important;
+    	height: 1055px !important;
+	}
+
+	.screen-wrapper
+	{
+		width: 476px !important;
+	}
+	
+	.play-board
+	{
+   		margin-top: 296px !important;
+	}
+
+	.frame-throw
+	{
+		font-size:1.5em;
+	}
+
+	.frame-total
+	{
+		font-size:1.5em;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	.bowling-alley-wrapper
+	{
+		width:479px !important;
+		height:630px !important;
+	}
+
+	.screen-wrapper
+	{
+		width: 477px !important;
+	}
+
+	.play-board
+	{
+   		margin-top: 246px !important;
+	}
+
+	.frame-total
+	{
+		font-size:0.7em;
+	}
+
+	.frame-throw
+	{
+		font-size:0.7em;
+	}
+}
+
+.bowling-alley-wrapper
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width: 788px;
+	height: 850px;
+	background:url('/assets/images/bowling.png');
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+
+
+
+

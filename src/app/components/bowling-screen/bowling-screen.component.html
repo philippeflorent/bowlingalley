@@ -1,0 +1,25 @@
+<div *ngIf="bowlingData" class="screen-wrapper">
+	<div class="screen">
+		<div *ngFor="let frame of bowlingData.frames;index as i" class="frame-wrapper"> 
+			<div class="frame-index">{{ i+1 }}</div>
+			<div class="frame-points-wrapper">
+				<div class="frame-ab-wrapper">
+					<div class="frame-throw">
+						{{ frame.points[0] }}
+					</div>
+					<div class="frame-throw">
+						{{ frame.points[1] }}
+					</div>
+				</div>
+				<div class="frame-total-wrapper">
+					<div class="frame-total">
+						{{ frameTotal(frame) }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="total">
+		{{ total }}
+	</div>
+</div>

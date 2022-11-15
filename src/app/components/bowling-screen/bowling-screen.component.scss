@@ -1,0 +1,94 @@
+.screen-wrapper
+{
+	width: 600px;
+	display: block;
+	overflow: hidden;
+	margin-left:auto;
+	margin-right:auto;
+	height: 89px;
+}
+
+.screen
+{
+	width:470px;
+    height: 52px;
+	background-color: black;
+    margin-top: 28px;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid white;
+    color: #fc05fb;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.total
+{
+    width: 100px;
+    height:50px;
+    line-height:50px;
+    background-color: black;
+    margin-top: 28px;
+    display: inline-block;
+    position: relative;
+    border-radius: 2px;
+    border: 2px solid #fc05fb;
+	color: #fc05fb;
+    padding: 5px;
+    text-align: center;
+    font-size: 2em;
+    margin-left: 10px;
+    top: -18px;
+}
+
+.frame-wrapper
+{
+    width: 45px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: #3a3131;
+    border-radius: 5px;
+    margin-right:2px;
+}
+
+.frame-index
+{
+	text-align:center;
+	height:12px;
+	line-height:12px;
+	color:white;
+}
+
+.frame-points-wrapper
+{
+}
+
+.frame-ab-wrapper
+{
+	display: block;
+    margin-left: auto;
+    width: 35px;
+    height: 15px;
+}
+
+.frame-throw
+{
+	text-align:center;
+	width:15px;
+	height:13px;
+	display: inline-block;
+	border:1px solid gray;
+}
+
+.frame-total-wrapper
+{
+	margin-top: 4px;
+	text-align:center;
+}
+
+.frame-total
+{
+	font-weight:bold;
+}

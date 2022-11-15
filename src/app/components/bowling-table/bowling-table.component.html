@@ -1,0 +1,25 @@
+<div class="play-board">
+	<form *ngIf="bowlingData" [formGroup]="formGroup" (ngSubmit)="applyScore()">
+
+		<input type="number" id="fallenPins" class="fallen-pins-input" required minlength="1" formControlName="fallenPins">
+
+		<button *ngIf="!done" class="game-button" type="submit" [attr.disabled]="form.valid ? null : ''">score it</button>
+
+		<div *ngIf="form.get('fallenPins')?.invalid && (form.get('fallenPins')?.dirty || form.get('fallenPins')?.touched)" class="alert">
+
+		  <div *ngIf="form.get('fallenPins')?.errors?.['required']">
+		    Pins Number is required.
+		  </div>
+		  <div *ngIf="form.get('fallenPins')?.errors?.['minlength']">
+		    Pins Number must be at least 1 characters long.
+		  </div>
+		  <div *ngIf="form.get('fallenPins')?.errors?.['pinsCount']">
+		    Pins Number must be >0 and <= {{ standingPins }}
+		  </div>
+
+		</div>
+
+	</form>
+	
+	<button *ngIf="done" (click)="resetGame()" class="game-button">reset game</button>
+</div>
