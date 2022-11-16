@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-/* custom components */
+/* default component for default route*/
 import { BowlingAlleyComponent } from './components/bowling-alley/bowling-alley.component';
 
 const routes: Routes = [

@@ -4,10 +4,10 @@
 */
 export class BowlingFrameData {
 
-	public strike:boolean=false;
-	public spare:boolean=false;
-	public points:number[]=[];
-	public open:boolean=false;
+	public strike:boolean=false; // frame is strike
+	public spare:boolean=false; // frame is spare
+	public points:number[]=[]; // array of points for throw a, b and bonus
+	public closed:boolean=false; // frame is closed if all pins are down
 	
 	/*
 		default constructor
@@ -16,19 +16,18 @@ export class BowlingFrameData {
     	this.strike=false;
 		this.spare=false;
 		this.points=[0,0,0];
-		this.open=false;
+		this.closed=false;
   	}
 
 	/*
 		css debug "constructor"
 	*/
-	debugInit(strike:boolean,spare:boolean,points:number[],open:boolean) {
+	debugInit(strike:boolean,spare:boolean,points:number[],closed:boolean) {
     	this.strike=strike;
 		this.spare=spare;
 		this.points=points;
-		this.open=open;
+		this.closed=closed;
   	}
-
 }
 
 /*

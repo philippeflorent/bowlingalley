@@ -1,10 +1,13 @@
 <div class="play-board">
 	<form *ngIf="bowlingData" [formGroup]="formGroup" (ngSubmit)="applyScore()">
 
+		<!-- input n fallen pins -->
 		<input type="number" id="fallenPins" class="fallen-pins-input" required minlength="1" formControlName="fallenPins">
 
+		<!-- play button -->
 		<button *ngIf="!done" class="game-button" type="submit" [attr.disabled]="form.valid ? null : ''">score it</button>
 
+		<!-- validation errors/warnings -->
 		<div *ngIf="form.get('fallenPins')?.invalid && (form.get('fallenPins')?.dirty || form.get('fallenPins')?.touched)" class="alert">
 
 		  <div *ngIf="form.get('fallenPins')?.errors?.['required']">
@@ -21,5 +24,6 @@
 
 	</form>
 	
+	<!-- reset button needs to be outside of the form tag -->
 	<button *ngIf="done" (click)="resetGame()" class="game-button">reset game</button>
 </div>

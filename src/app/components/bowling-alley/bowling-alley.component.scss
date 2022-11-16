@@ -1,5 +1,6 @@
 /* Responsive Styles */
-@media screen and (max-width: 293px) {
+
+@media screen and (max-width: 400px) {
 
 	.bowling-alley-wrapper
 	{
@@ -7,54 +8,6 @@
     	height: 1055px !important;
 	}
 
-	.screen-wrapper
-	{
-		width: 476px !important;
-	}
-	
-	.play-board
-	{
-   		margin-top: 296px !important;
-	}
-
-	.frame-throw
-	{
-		font-size:1.5em;
-	}
-
-	.frame-total
-	{
-		font-size:1.5em;
-	}
-}
-
-@media screen and (max-width: 1024px) {
-
-	.bowling-alley-wrapper
-	{
-		width:479px !important;
-		height:630px !important;
-	}
-
-	.screen-wrapper
-	{
-		width: 477px !important;
-	}
-
-	.play-board
-	{
-   		margin-top: 246px !important;
-	}
-
-	.frame-total
-	{
-		font-size:0.7em;
-	}
-
-	.frame-throw
-	{
-		font-size:0.7em;
-	}
 }
 
 .bowling-alley-wrapper

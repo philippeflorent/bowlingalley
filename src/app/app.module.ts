@@ -5,9 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+/* custom components */
+/* main component */
 import { BowlingAlleyComponent } from './components/bowling-alley/bowling-alley.component';
 import { BowlingScreenComponent } from './components/bowling-screen/bowling-screen.component';
 import { BowlingTableComponent } from './components/bowling-table/bowling-table.component';
+/* sub components */
 import { BowlingPinsComponent } from './components/bowling-pins/bowling-pins.component';
 
 @NgModule({

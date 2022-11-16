@@ -1,6 +1,8 @@
 <div *ngIf="bowlingData" class="screen-wrapper">
+
 	<div class="screen">
-		<div *ngFor="let frame of bowlingData.frames;index as i" class="frame-wrapper"> 
+		<!-- the screen contains the 10 game frames -->
+		<div *ngFor="let frame of bowlingData.frames;index as i" class="frame-wrapper" [ngClass]="{ 'closed' : frame.closed }"> 
 			<div class="frame-index">{{ i+1 }}</div>
 			<div class="frame-points-wrapper">
 				<div class="frame-ab-wrapper">
@@ -19,7 +21,10 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- points total of current game -->
 	<div class="total">
 		{{ total }}
 	</div>
+
 </div>

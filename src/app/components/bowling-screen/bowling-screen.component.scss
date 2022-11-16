@@ -1,3 +1,66 @@
+@import "../../scss-library/library.scss";
+
+/* Responsive Styles */
+@media screen and (max-width: 400px) {
+
+    .screen
+    {
+        margin-top:0px !important;
+        height:100px !important;
+        width:640px !important;
+        margin-left:0px;
+    }
+
+    .screen-wrapper
+    {
+        width: 779px !important;
+    }
+    
+    .pins-wrapper
+    {
+        margin-top: 150px !important;
+    }
+
+    .play-board
+    {
+        margin-top: 504px !important;
+    }
+
+    .frame-wrapper{
+        width: 62px !important;
+        height: 81px !important;
+    }
+    
+    .frame-ab-wrapper{
+        width: 58px !important;
+        height: 28px !important;
+    }
+
+    .frame-throw
+    {
+        font-size:1.5em !important;
+        width: 24px !important;
+        height: 29px !important;
+    }
+
+    .frame-index
+    {
+        height: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .frame-total
+    {
+        font-size:1.5em !important;
+    }
+
+    .total
+    {
+        margin-top:0px !important;
+        top:-48px !important;
+    }
+}
+
 .screen-wrapper
 {
 	width: 600px;
@@ -18,7 +81,7 @@
     position: relative;
     border-radius: 2px;
     border: 1px solid white;
-    color: #fc05fb;
+    color: $primary;
     overflow: hidden;
     padding: 2px;
 }
@@ -33,8 +96,8 @@
     display: inline-block;
     position: relative;
     border-radius: 2px;
-    border: 2px solid #fc05fb;
-	color: #fc05fb;
+    border: 2px solid $primary;
+	color: $primary;
     padding: 5px;
     text-align: center;
     font-size: 2em;
@@ -45,7 +108,7 @@
 .frame-wrapper
 {
     width: 45px;
-    height: 50px;
+    height: 52px;
     overflow: hidden;
     display: inline-block;
     background-color: #3a3131;
@@ -53,11 +116,16 @@
     margin-right:2px;
 }
 
+.closed
+{
+    background-color:$closed-background;
+}
+
 .frame-index
 {
 	text-align:center;
-	height:12px;
-	line-height:12px;
+    height: 16px;
+    line-height: 15px;
 	color:white;
 }
 
@@ -67,19 +135,19 @@
 
 .frame-ab-wrapper
 {
-	display: block;
+    display: block;
     margin-left: auto;
-    width: 35px;
+    width: 44px;
     height: 15px;
 }
 
 .frame-throw
 {
-	text-align:center;
-	width:15px;
-	height:13px;
-	display: inline-block;
-	border:1px solid gray;
+    text-align: center;
+    width: 19px;
+    height: 17px;
+    display: inline-block;
+    border: 1px solid gray;
 }
 
 .frame-total-wrapper

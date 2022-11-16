@@ -1,6 +1,8 @@
+@import "../../scss-library/library.scss";
+
 .pins-wrapper
 {
-	color: #fc05fb;
+	color: $primary;
 	border:1px solid white;
 	width:100px;
 	height:40px;
